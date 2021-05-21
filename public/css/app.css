@@ -27,6 +27,19 @@ section.hero {
   background: #F8F8F8;
 }
 
+.book {
+  border-color: #FE5F1E;
+  border-width: 2px;
+  border-style: solid;
+  color: #FE5F1E;
+  transition: all 0.3s ease-in-out;
+}
+.book:hover {
+  background: #FE5F1E;
+  color: #fff;
+  border-color: #fff;
+}
+
 .add-to-cart {
   border-color: #FE5F1E;
   border-width: 2px;
@@ -38,4 +51,16 @@ section.hero {
   background: #FE5F1E;
   color: #fff;
   border-color: #fff;
+}
+
+.cartpage {
+  background: #F8F8F8;
+}
+.cartpage .amount {
+  color: #FE5F1E;
+}
+
+.login {
+  background: #F8F8F8;
+  min-height: calc(100vh-86px);
 }

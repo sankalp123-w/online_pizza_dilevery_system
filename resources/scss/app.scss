@@ -29,6 +29,19 @@ section.hero{
 background:$secondery;	
 }
 
+.book{
+	border-color:$primary;
+	border-width:2px;
+	border-style:solid;
+	color:$primary;
+	transition:all .3s ease-in-out;
+	&:hover{
+		background:$primary;
+		color:$pure;
+		border-color:$pure;
+	}
+
+}
 .add-to-cart{
 	border-color:$primary;
 	border-width:2px;
@@ -40,4 +53,16 @@ background:$secondery;
 		color:$pure;
 		border-color:$pure;
 	}
+}
+
+.cartpage{
+background:$secondery;
+.amount{
+	color:$primary;
+}
+}
+
+.login{
+	background:$secondery;
+	min-height:calc(100vh-86px);
 }
