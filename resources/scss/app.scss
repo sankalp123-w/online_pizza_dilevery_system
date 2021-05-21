@@ -1,0 +1,43 @@
+ @import './variables';
+body{
+	font-family:'lato',sans-serif;
+	-webkit-font-smoothing:antialiased;
+	color: $dark;
+
+}
+
+nav li:last-child a{
+background-color:$primary;
+border-radius:40px;
+&:hover{
+      background:$primary-hover;
+	}
+}
+
+nav li a {
+  transition:all .3s ease-in-out;
+	&:hover{
+      color:$primary;
+	}
+}
+
+section.hero{
+
+	background:$secondery;
+}
+.size{
+background:$secondery;	
+}
+
+.add-to-cart{
+	border-color:$primary;
+	border-width:2px;
+	border-style:solid;
+	color:$primary;
+	transition:all .3s ease-in-out;
+	&:hover{
+		background:$primary;
+		color:$pure;
+		border-color:$pure;
+	}
+}
