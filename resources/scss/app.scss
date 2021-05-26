@@ -1,4 +1,6 @@
  @import './variables';
+@import '~noty/src/noty.scss';
+@import '~noty/src/themes/mint.scss';
 body{
 	font-family:'lato',sans-serif;
 	-webkit-font-smoothing:antialiased;
@@ -34,25 +36,33 @@ background:$secondery;
 	border-width:2px;
 	border-style:solid;
 	color:$primary;
+	
 	transition:all .3s ease-in-out;
 	&:hover{
 		background:$primary;
 		color:$pure;
 		border-color:$pure;
-	}
-
+	};
+&:focus{
+	outline: none; 
+}
 }
 .add-to-cart{
 	border-color:$primary;
 	border-width:2px;
 	border-style:solid;
-	color:$primary;
+	color:$primary; 
 	transition:all .3s ease-in-out;
 	&:hover{
 		background:$primary;
 		color:$pure;
 		border-color:$pure;
-	}
+	};
+	&:focus{
+	outline: none; 
+}
+
+
 }
 
 .cartpage{
@@ -65,4 +75,9 @@ background:$secondery;
 .login{
 	background:$secondery;
 	min-height:calc(100vh-86px);
+}
+
+.noty_theme__mint{
+border-radius: 50px !important;
+padding-left: 8px !important;
 }
