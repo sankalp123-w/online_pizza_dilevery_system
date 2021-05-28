@@ -1,5 +1,6 @@
 import axios from 'axios';
 import Noty from "noty";
+import { initAdmin } from './admin'
 let cartbutton = document.querySelectorAll('.add-to-cart');
 let cart_counter =document.querySelector('.cart_counter');
 function updateCart(pizza){
@@ -29,3 +30,13 @@ btn.addEventListener("click",(e)=>{
 })
 
 });
+
+var ale = document.querySelector('.ale');
+
+if(ale){
+
+ setTimeout(
+function(){ ale.style.display="none"; },2000);
+}
+
+ initAdmin()

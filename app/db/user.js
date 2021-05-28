@@ -21,6 +21,6 @@ type:String,
  	type:String,
  	default:"coustomer"	
  }
-});
+}, { timestamps: true });
 const users = new mongoose.model("user",nuser);
 module.exports=users;
