@@ -39,4 +39,7 @@ if(ale){
 function(){ ale.style.display="none"; },2000);
 }
 
- initAdmin()
+if(window.location.pathname.includes('adminorders')){
+ initAdmin();
+}
+

@@ -18,6 +18,9 @@ app.post("/updatecart",cartController().update);
 app.post("/order",auth,orderController().store);
 app.get("/myorders",auth,orderController().index);
 app.get("/adminorders",admin,adminorderController().index);
+app.post("/adminorders/status",admin,adminorderController().update);
+app.get("/:id",auth,adminorderController().viewstatus);
+
 };
 
 module.exports = call;

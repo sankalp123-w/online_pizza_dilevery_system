@@ -42,11 +42,13 @@ res.locals.user = req.user;
 next();
 });
 //setting routes and views 
+
+
 require("./routes/web")(app);
+
 app.set("views",path.join(__dirname,"resources/views"));
 app.set("view engine","ejs");
 app.use(express.static('public'));
-
 app.listen(port,()=>{
 	console.log(`listening to${port}`);
 });
