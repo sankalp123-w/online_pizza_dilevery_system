@@ -87,7 +87,7 @@ const authController= ()=>{
           console.log(err);
         }},
         logout(req,res){
-          req.logout();
+           req.logout();
           return res.redirect("/login");
 
         }

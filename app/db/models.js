@@ -21,7 +21,6 @@ type:String,
  	require:true,
  }
 
-
 });
 const classes = new mongoose.model("menue",student);
 module.exports=classes;
