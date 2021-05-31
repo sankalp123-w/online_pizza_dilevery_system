@@ -1,2 +1,1 @@
-run:
-serve: web
+web: npm run start
